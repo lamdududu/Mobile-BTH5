@@ -125,6 +125,13 @@ fun BookingHotelApp(
             composable(route = BookingHotelScreen.Details.name) {
                 RoomDetailScreen(
                     bookingUiState = uiState,
+                    onValueChange = { newBooking ->
+                        if (newBooking != null) {
+                            Log.d("LogPrice", "$newBooking newBooking")
+                            bookingViewModel.onUpdateNewBooking(newBooking)
+                            Log.d("LogPrice", "${uiState.newBookedQuantity}")
+                        }
+                    },
                     onBookClick = {
                         if(bookingViewModel.checkRoom() == true) {
                             bookingViewModel.onBookClick()

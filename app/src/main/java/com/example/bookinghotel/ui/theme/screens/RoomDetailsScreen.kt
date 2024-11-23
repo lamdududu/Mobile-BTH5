@@ -58,6 +58,7 @@ import java.text.NumberFormat
 fun RoomDetailScreen(
     bookingViewModel: BookingViewModel = viewModel(),
     bookingUiState: BookingUiState,
+    onValueChange: (Int) -> Unit = {},
     onCancelClick: () -> Unit = {},
     onBookClick: () -> Unit = {},
     modifier: Modifier = Modifier,
@@ -180,12 +181,8 @@ fun RoomDetailScreen(
                     value = bookingQuantity,
                     onValueChange = { it ->
                         bookingQuantity = it
-                        val newBooking = bookingQuantity.toIntOrNull()
-                        if (newBooking != null) {
-                            Log.d("LogPrice", "$newBooking newBooking")
-                            bookingViewModel.onUpdateNewBooking(newBooking)
-                            Log.d("LogPrice", "${uiState.newBookedQuantity}")
-                        }
+                        if(it.toIntOrNull() != null)
+                            onValueChange(it.toInt())
                     },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions.Default.copy(
