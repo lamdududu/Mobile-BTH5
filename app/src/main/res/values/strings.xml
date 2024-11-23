@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Booking Hotel</string>
+
+    <string name="standard_room_id">100</string>
+    <string name="deluxe_room_id">101</string>
+    <string name="suite_room_id">102</string>
+    <string name="executive_room_id">103</string>
+    <string name="family_room_id">104</string>
+
+    <string name="standard_room">Standard</string>
+    <string name="deluxe_room">Deluxe</string>
+    <string name="suite_room">Suite</string>
+    <string name="executive_room">Executive</string>
+    <string name="family_room">Family</string>
+
+<!--    <string name="standard_price">30</string>-->
+<!--    <string name="deluxe_price">40</string>-->
+<!--    <string name="suite_price">50</string>-->
+<!--    <string name="executive_price">60</string>-->
+<!--    <string name="family_price">70</string>-->
+
+    <string name="gym_amenity">Gym</string>
+    <string name="pool_amenity">Pool</string>
+    <string name="breakfast_amenity">Breakfast</string>
+    <string name="lunch_amenity">Lunch buffet</string>
+    <string name="dinner_amenity">Dinner buffet</string>
+
+    <string name="room_type">Room type:</string>
+    <string name="room_available">Available rooms:</string>
+    <string name="amenities">Amenities:</string>
+    <string name="price">Price per Night:</string>
+    <string name="total_payment">Total payment:</string>
+    <string name="booked_quantity">Booked room quantity:</string>
+
+    <string name="booking_quantity">How many rooms do you want to book?</string>
+    <string name="successful_notification">You have booked the room(s) successfully!</string>
+    <string name="warning_notification">You need to pay within 3 hours.</string>
+    <string name="warning_booking">Not enough available rooms. Please re-enter the number of rooms.</string>
+
+    <string name="cancel_button">Cancel</string>
+    <string name="booking_button">Book</string>
+
+    <string name="room_details">Room Details</string>
+    <string name="room_list">Room List</string>
+    <string name="booking_summary">Booking Summary</string>
+
+    <string name="error"></string>
+</resources>

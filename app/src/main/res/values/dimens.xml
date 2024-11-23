@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="elevation_card">5dp</dimen>
+    <dimen name="spacer_width">10dp</dimen>
+    <dimen name="spacer_height">10dp</dimen>
+    <dimen name="padding_card">5dp</dimen>
+</resources>
